@@ -1,5 +1,6 @@
 import pytest
-from blackjack import count_cards
+from casino.blackjack import count_cards
+# "casino." allows the script to reference the files in the folder casino | relevant for pytest
 
 
 def test_count_cards():
