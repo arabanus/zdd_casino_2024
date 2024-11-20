@@ -1,6 +1,4 @@
 from casino.main_classes import CardDeck
-# "casino." allows the script to reference the files in the folder casino | relevant for pytest
-
 
 
 def count_cards(cards):
@@ -70,6 +68,7 @@ def play_game():
     print("\nFinal Scores:")
     for player in players:
         print(f"{player['name']}: {player['score']} points")
+    
     if winners:
         print(f"Winner(s): {', '.join(winners)}")
     else:
